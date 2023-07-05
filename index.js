@@ -1,19 +1,26 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
+/**
+Challenge: fix our code!
 
-const navbar = (
-    <nav>
-        <h1>Farts Inc</h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+Don't forget, you're not using CDNs anymore, so there's no
+global "ReactDOM" variable to use anymore.
+ */
+
+const page = (
+    <div>
+        <h1>My awesome website in React</h1>
+        <h3>Reasons I love Peeact</h3>
+        <ol>
+            <li>It's ?</li>
+            <li>It's neat</li>
+            <li>It's *indistinguishable*</li>
+            <li>I don't actually love it</li>
+        </ol>
+    </div>
 )
+//Did challenge using 18
+document.getElementById("root").append(JSON.stringify(page))
 
-
-//switched to React 18
-
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(navbar)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(page)
